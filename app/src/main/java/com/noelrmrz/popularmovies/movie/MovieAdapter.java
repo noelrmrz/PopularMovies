@@ -1,4 +1,4 @@
-package com.noelrmrz.popularmovies;
+package com.noelrmrz.popularmovies.movie;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.noelrmrz.popularmovies.R;
 import com.noelrmrz.popularmovies.utilities.PicassoClient;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapterViewHolder> {
@@ -31,7 +32,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
 
     @Override
     public void onBindViewHolder(@NonNull MovieAdapterViewHolder movieAdapterViewHolder, int position) {
-        String imageUrl = mMovieList.getMovieList().get(position).getPosterPath();
+        String imageUrl = mMovieList.getMovieList().get(position).getMPosterPath();
         PicassoClient.downloadImage(imageUrl, movieAdapterViewHolder.mImageView);
     }
 
@@ -76,5 +77,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
     public void setMovieList(MovieList movieList) {
         mMovieList = movieList;
         notifyDataSetChanged();
+    }
+
+    public MovieList getMovieList() {
+        return mMovieList;
     }
 }

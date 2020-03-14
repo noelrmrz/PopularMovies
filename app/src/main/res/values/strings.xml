@@ -3,6 +3,13 @@
     <string name="error_message">An error has occurred.</string>
     <string name="popularity">Popularity</string>
     <string name="rating">Top rated</string>
+    <string name="favorites">Favorites</string>
+    <string name="favorites_value">favorites</string>
     <string name="sort_by_popularity">popularity.desc</string>
     <string name="sort_by_rating">vote_count.desc</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_sort_key">sort</string>
+    <string name="play_trailer">Play Trailer</string>
+    <string name="like">Like</string>
+    <string name="unlike">Unlike</string>
 </resources>

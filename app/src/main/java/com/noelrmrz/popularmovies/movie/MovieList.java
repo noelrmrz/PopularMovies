@@ -1,4 +1,4 @@
-package com.noelrmrz.popularmovies;
+package com.noelrmrz.popularmovies.movie;
 
 import com.google.gson.annotations.SerializedName;
 

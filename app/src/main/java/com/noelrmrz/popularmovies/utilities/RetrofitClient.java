@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
 
     private static final String BASE_URL = "https://api.themoviedb.org/";
-    // Request your own API_KEY form themoviedb.org and place the key into the variable below
+    // TODO: Request your own API_KEY form themoviedb.org and place the key into the variable below
     private static final String API_KEY = "";
 
     public static void getMovieObject(Callback<MovieList> callback, String preference) {

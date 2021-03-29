@@ -23,10 +23,10 @@ android {
 }
 
 dependencies {
-    def room_version = "2.2.4"
-    def lifecycle_version = "2.2.0"
+    def room_version = "2.2.6"
+    def lifecycle_version = "2.3.1"
 
-    def preference_version = "1.1.0"
+    def preference_version = "1.1.1"
 
     // Java language implementation
     implementation "androidx.preference:preference:$preference_version"
@@ -37,16 +37,16 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     // Room
     implementation "androidx.room:room-runtime:$room_version"
-    implementation 'androidx.preference:preference:1.1.0-alpha05'
+    implementation 'androidx.preference:preference:1.1.1'
     annotationProcessor "androidx.room:room-compiler:$room_version"
 
     // Constaint Layout
-    implementation "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.0-beta01"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'junit:junit:4.12'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.7.1'

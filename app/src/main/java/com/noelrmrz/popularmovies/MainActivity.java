@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
                         mMovieAdapter.setMovieList(movieList);
                     } else {
                         Log.v(TAG, response.errorBody().toString());
+                        Log.v(TAG, "error");
                     }
                 }
 
@@ -110,6 +111,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
                 public void onFailure(Call<MovieList> call, Throwable t) {
                     mErrorMessageView.setVisibility(View.VISIBLE);
                     Log.v(TAG, t.toString());
+                    Log.v(TAG, "failure");
                 }
             }, preference);
         }

@@ -71,15 +71,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
         }
     }
     /**
-     *
+  d   *
      * @param movieList The new movie data to be shown
      */
     public void setMovieList(MovieList movieList) {
         mMovieList = movieList;
         notifyDataSetChanged();
-    }
-
-    public MovieList getMovieList() {
-        return mMovieList;
     }
 }

@@ -1,2 +1,2 @@
 # PopularMovies
-![App preview](https://github.com/noelrmrz/PopularMovies/Animated GIF-original.gif)
+![App preview](https://media.giphy.com/media/gd9NFuduJ86HZZcAE8/giphy.gif)
